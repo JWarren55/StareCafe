@@ -10,4 +10,4 @@ app.use('/api/food', foodRoutes);
 app.use('/api/feedback', feedbackRoutes);
 app.use('/api/comments', feedbackRoutes); // reuse for comments
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+app.listen(3000, () => console.log('Server running on port 3000'));                             
