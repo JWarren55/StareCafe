@@ -5,6 +5,7 @@ const foodRoutes = require('./routes/food');
 const feedbackRoutes = require('./routes/feedback');
 
 app.use(express.json());
+app.use(express.static('public'))
 app.use('/api/menu', menuRoutes);
 app.use('/api/food', foodRoutes);
 app.use('/api/feedback', feedbackRoutes);

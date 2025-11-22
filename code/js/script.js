@@ -22,7 +22,7 @@ function displayMenu(items) {
   });
 }
 
-fetch('menu.json')
+fetch('/api/menu')
   .then(res => res.json())
   .then(data => {
     menuData = data;
