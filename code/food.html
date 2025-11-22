@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Detail</title>
+  <link rel="stylesheet" href="css/food.css" />
+</head>
+<body>
+  <button id="exit-button">✖</button>
+  <h2 id="food-name">Loading...</h2>
+  <img id="food-image" src="" alt="Food Image" />
+  <div id="rating-buttons">
+    <button id="thumb-down">👎</button>
+    <button id="thumb-up">👍</button>
+  </div>
+  <div id="nutrition-info"></div>
+  <button id="view-comments">View Comments</button>
+
+  <section id="comments-section" style="display:none;">
+    <canvas id="rating-chart"></canvas>
+    <div id="comments-list"></div>
+    <textarea id="new-comment" placeholder="Add your comment..."></textarea>
+    <input type="file" id="comment-image" />
+    <button id="submit-comment">Post</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/food.js"></script>
+</body>
+</html>
